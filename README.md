@@ -1,27 +1,6 @@
 # 📱 Mobile Flutter - PRM393 Study Materials
 
-Welcome to the **PRM393 Mobile Programming** repository. This project is a streamlined Flutter application designed to showcase core mobile development concepts, starting with models, static memory state management, and declarative data operations in Dart.
-
----
-
-## 🚀 Features & Components
-
-### 📦 The `Product` Model (`lib/product.dart`)
-A robust representation of an e-commerce product featuring clean architecture principles:
-
-*   **Attributes:**
-    *   `id` (String): Unique identifier.
-    *   `name` (String): Product name.
-    *   `image` (String): Image URL.
-    *   `price` (double): Current price of the product.
-*   **Key Operations & Methods:**
-    *   `Product.fromJson(Map<String, dynamic> json)`: Factory constructor for seamless JSON serialization.
-    *   `Product.copyWith(...)`: Facilitates immutable state updates.
-    *   `Product.add(Product)`: Adds a new product to the central static memory list.
-    *   `Product.edit(Product)`: Safely updates an existing product.
-    *   `Product.find(String id)`: Retrieves a specific product by its ID.
-    *   `Product.search({String? query, double? minPrice, double? maxPrice})`: Performs flexible, multi-criteria filtering.
-    *   `Product.increasePrice()`: Leverages Dart's **declarative `.map()`** operator to elevate all product prices by `10%` in a functional programming style.
+Welcome to the **PRM393 Mobile Programming** repository. This project serves as a structured space for Flutter study materials, practical exercises, and coursework applications.
 
 ---
 
@@ -61,9 +40,9 @@ flutter doctor
 ## 📂 Project Directory Structure
 ```text
 lib/
-├── models/         # (Future growth) App data models
+├── models/         # App data models
 ├── widgets/        # Reusable custom UI components
-├── product.dart    # Product model & static data manager
+├── screens/        # UI Screens / Views
 └── main.dart       # Application entry point
 ```
 
