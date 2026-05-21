@@ -37,7 +37,10 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.cyan,
           leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
           title: const Center(child: Text("HomePage")),
-          actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.settings))],
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+          ],
         ),
         body: Container(
           width: double.infinity,
@@ -46,7 +49,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                 "Hello Home Page",
                 style: TextStyle(
                   fontSize: 20,
@@ -54,14 +57,24 @@ class MyApp extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               Image.asset(
                 "assets/images/Minions_poster.png",
-                width: 200,
-                height: 200,
+                width: 400,
+                height: 400,
               ),
             ],
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: "Settings",
+            ),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          ],
         ),
       ),
     );
