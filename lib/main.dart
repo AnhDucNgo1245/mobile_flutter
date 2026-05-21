@@ -28,9 +28,42 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.cyan,
+          leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+          title: const Center(child: Text("HomePage")),
+          actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.settings))],
+        ),
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          decoration: const BoxDecoration(color: Colors.cyan),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                "Hello Home Page",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Image.asset(
+                "assets/images/Minions_poster.png",
+                width: 200,
+                height: 200,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
