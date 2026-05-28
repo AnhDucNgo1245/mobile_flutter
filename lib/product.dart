@@ -142,6 +142,7 @@ class Product {
   }
 }
 
+// ignore_for_file: avoid_print
 void main() {
   print('=== INITIAL PRODUCT LIST ===');
   for (var p in Product.list) {
