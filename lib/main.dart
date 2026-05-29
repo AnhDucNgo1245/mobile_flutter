@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_prm/View/Pages/home_page.dart';
+// import 'package:flutter_prm/View/Pages/home_page.dart'; // Lab cũ – đã comment
+import 'package:flutter_prm/Lab4/lab4_home.dart'; // Lab 4 – Flutter UI Fundamentals
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const HomePage(),
+      // home: const HomePage(), // Lab cũ – đã comment
+      home: const Lab4Home(), // Lab 4 – Flutter UI Fundamentals
     );
   }
 }
