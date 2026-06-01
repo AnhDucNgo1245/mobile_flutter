@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_prm/View/Widgets/product_list.dart';
+import 'package:flutter_prm/View/Pages/about_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,11 +27,17 @@ class _HomePageState extends State<HomePage> {
         title: const Center(child: Text("HomePage")),
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/about');
+            },
+            icon: Icon(Icons.account_box_outlined),
+          ),
           IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
         ],
       ),
       // body: ProductWidget(),
-      body: const ProductList(),
+      body: ProductList(),
 
       // Container(
       //   width: double.infinity,
