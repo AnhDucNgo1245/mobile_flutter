@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_prm/Views/Pages/home_page.dart';
 import 'package:flutter_prm/Lab4/lab4_home.dart'; // Lab 4 – Flutter UI Fundamentals
 import 'package:flutter_prm/Views/Pages/about_page.dart';
-import 'package:flutter_prm/Views/Pages/home_page_navigation_bar.dart';
+import 'package:flutter_prm/Lab5/View/Pages/lab5_home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomePageNavigationBar(),
+      home: const Lab5HomePage(),
       // routes: {'/about': (context) => const AboutPage()},
       // home: const Lab4Home(), // Lab 4 – Flutter UI Fundamentals
     );
