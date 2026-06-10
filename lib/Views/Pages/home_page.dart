@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_prm/View/Widgets/product_list.dart';
-import 'package:flutter_prm/View/Pages/about_page.dart';
+import 'package:flutter_prm/Views/Widgets/product_list.dart';
+import 'package:flutter_prm/Views/Pages/about_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

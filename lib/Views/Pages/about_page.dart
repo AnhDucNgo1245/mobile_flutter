@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_prm/View/Pages/home_page.dart';
+import 'package:flutter_prm/Views/Pages/home_page.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});

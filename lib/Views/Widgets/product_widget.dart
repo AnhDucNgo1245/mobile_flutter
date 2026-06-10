@@ -15,8 +15,11 @@ class _ProductWidgetState extends State<ProductWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
-      height: 500,
+      // width: double.infinity,
+      width: MediaQuery.of(context).size.width <= 450
+          ? MediaQuery.of(context).size.width
+          : MediaQuery.of(context).size.width / 2,
+      // height: 500,
       child: Card(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +41,8 @@ class _ProductWidgetState extends State<ProductWidget> {
                       ),
                     ),
                     FloatingActionButton.extended(
-                      heroTag: null, // Tránh trùng lặp heroTag khi hiển thị trong ListView
+                      heroTag:
+                          null, // Tránh trùng lặp heroTag khi hiển thị trong ListView
                       onPressed: () {},
                       label: const Text("Add to Cart"),
                       icon: const Icon(Icons.shopping_cart),
@@ -72,7 +76,10 @@ class _ProductWidgetState extends State<ProductWidget> {
                         const SizedBox(height: 4),
                         Text(
                           "Price: ${widget.product.price.toStringAsFixed(2)}\$",
-                          style: const TextStyle(color: Colors.red, fontSize: 16),
+                          style: const TextStyle(
+                            color: Colors.red,
+                            fontSize: 16,
+                          ),
                         ),
                       ],
                     ),
@@ -121,7 +128,10 @@ class _ProductWidgetState extends State<ProductWidget> {
             const Expanded(
               flex: 1,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 8.0,
+                  vertical: 4.0,
+                ),
                 child: SingleChildScrollView(
                   child: Text(
                     '"Brainrot" (tạm dịch: thối não) là thuật ngữ mạng xã hội mô tả tình trạng sa sút nhận thức do tiêu thụ quá mức các nội dung trực tuyến vô nghĩa, lặp đi lặp lại. Hiện nay, "Brainrot" còn là một vũ trụ meme tạo bởi AI, thu hút giới trẻ nhờ hình ảnh siêu thực và âm thanh gây nghiện.',
@@ -130,6 +140,18 @@ class _ProductWidgetState extends State<ProductWidget> {
                   ),
                 ),
               ),
+            ),
+
+            Wrap(
+              children: [
+                ElevatedButton(onPressed: () {}, child: Text("BrainRot")),
+                SizedBox(width: 8),
+                ElevatedButton(onPressed: () {}, child: Text("Minions")),
+                SizedBox(width: 8),
+                ElevatedButton(onPressed: () {}, child: Text("Spongebob")),
+                SizedBox(width: 8),
+                ElevatedButton(onPressed: () {}, child: Text("Doraemon")),
+              ],
             ),
             const SizedBox(height: 8),
           ],

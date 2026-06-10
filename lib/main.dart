@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_prm/View/Pages/home_page.dart';
+import 'package:flutter_prm/Views/Pages/home_page.dart';
 import 'package:flutter_prm/Lab4/lab4_home.dart'; // Lab 4 – Flutter UI Fundamentals
-import 'package:flutter_prm/View/Pages/about_page.dart';
-import 'package:flutter_prm/View/Pages/home_page_navigation_bar.dart';
+import 'package:flutter_prm/Views/Pages/about_page.dart';
+import 'package:flutter_prm/Views/Pages/home_page_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
