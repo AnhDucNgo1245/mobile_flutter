@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_prm/Entity/product.dart';
 import 'package:flutter_prm/ViewModel/product_vm.dart';
-import 'package:flutter_prm/Views/Pages/productDetail.dart';
+import 'package:flutter_prm/Views/Pages/product_detail.dart';
 
 // ĐỐI CHIẾU CŨ:
 // class ProductListWidget extends StatefulWidget {

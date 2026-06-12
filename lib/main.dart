@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_prm/Views/Pages/homepage.dart';
-
+import 'package:flutter_prm/Lab6/lab6_responsive_ui.dart';
 // ĐỐI CHIẾU CŨ:
 // void main() {
 //   runApp(const MyApp());
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       //
       // ĐỐI CHIẾU MỚI:
       // Trỏ trực tiếp vào HomePage mới xây dựng bằng Riverpod
-      home: const HomePage(),
+      home: const GenreScreen(),
     );
   }
 }

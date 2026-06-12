@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_prm/ViewModel/product_vm.dart';
-import 'package:flutter_prm/Views/Pages/productList.dart';
-import 'package:flutter_prm/Views/Pages/productDetail.dart';
-import 'package:flutter_prm/Views/Pages/cartPage.dart';
+import 'package:flutter_prm/Views/Pages/product_list.dart';
+import 'package:flutter_prm/Views/Pages/product_detail.dart';
+import 'package:flutter_prm/Views/Pages/cart_page.dart';
 
 // CHỨC NĂNG: Quản lý Tabs chính và ô tìm kiếm sản phẩm.
 // LÝ DO DÙNG CONSUMERSTATEFULWIDGET: Cần lưu trạng thái index hiện tại và sử dụng ref để giao tiếp Riverpod.
